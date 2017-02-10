@@ -51,17 +51,40 @@ div.desc {
 	text-align:left;
 }
 
+@media only screen and (max-width: 768px) {
+	.pull-right {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	
+	.page-scroll {
+		color: white;
+	}
+}
+
 @media only screen and (max-width: 700px){
     .responsivepic {
         width: 29.99999%;
         margin: 6px 0;
     }
+	
+	
+	
 }
 
 @media only screen and (max-width: 500px){
     .responsivepic {
         width: 50%;
     }
+	
+	.pull-right {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	
+	.page-scroll {
+		color: white;
+	}
 }
 @font-face {
 	font-family:'BebasNeueRegular';
