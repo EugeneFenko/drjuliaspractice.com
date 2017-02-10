@@ -57,9 +57,19 @@ div.desc {
 		margin: 0 !important;
 	}
 	
-	.page-scroll {
-		color: white;
+	.page-scroll, .navbar-brand {
+		color: white !important;
 	}
+	
+	.page-scroll {
+		line-height: 18px;
+		width: 85%;
+	}
+	
+	#home-slider {
+		margin-top: -5%;
+	}
+	
 }
 
 @media only screen and (max-width: 700px){
@@ -86,6 +96,18 @@ div.desc {
 		color: white;
 	}
 }
+
+
+
+@media only screen and (max-width: 440px){
+   	.page-scroll {
+		width: 75%;
+		float: left;
+	}
+	
+	
+}
+
 @font-face {
 	font-family:'BebasNeueRegular';
 	src:url('fonts/BebasNeue-webfont.eot');
