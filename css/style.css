@@ -1,5 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500'); /*font-family: 'Roboto', sans-serif;*/
+
+.transbox {
+	font-family: 'Roboto' !important;
+	font-weight: 300;
+}
+
+#home-slider , .flexslider{
+		height:100vh;
+		padding:0px;
+	}
+	
+.navbar-header {
+	margin: 0 !important;
+
+}
+
+.navbar > .container {
+	padding: 0 !important;
+}
+
+/*=========END_EDIT======*/
 body {
-	padding-top:60px;
 	font-family:Open Sans;
 	line-height:1.72857143;
 	font-size:14px;
@@ -51,7 +73,7 @@ div.desc {
 	text-align:left;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.pull-right {
 		width: 100% !important;
 		margin: 0 !important;
@@ -61,14 +83,11 @@ div.desc {
 		color: white !important;
 	}
 	
-	.page-scroll {
+	#info {
 		line-height: 18px;
 		width: 85%;
 	}
 	
-	#home-slider {
-		margin-top: -5%;
-	}
 	
 }
 
@@ -101,8 +120,12 @@ div.desc {
 
 @media only screen and (max-width: 440px){
    	.page-scroll {
-		width: 75%;
+		width: 100%;
 		float: left;
+	}
+	
+	#info {
+		width: 75%;
 	}
 	
 	
@@ -760,7 +783,7 @@ html[xmlns] .slides {
 .flex-caption {
 	width:100%;
 	position:absolute;
-	margin-top:190px;
+	margin-top: 50vh;
 }
 .flex-caption div {
 		margin:0 auto;
