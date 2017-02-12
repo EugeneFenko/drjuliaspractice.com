@@ -558,27 +558,40 @@ inactive box 5 and 6=========================-->
 
 	
                  <fieldset>
+        <div class="cfrm">
+
 			<div class="row">
+				<div class="rows">
 				<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
 					<label for="name" id="name">Name<span class="required">*</span></label>
 					<input type="text" name="name" id="name" size="30" value="" required/>
 				</div>
 				<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
 					<label for="email" id="email">Email<span class="required">*</span></label>
-					<input type="text" name="email" id="email" size="30" placeholder="example@com" required/>
+					<input type="email" name="email" id="email" size="30" placeholder="example@com" required/>
 				</div>
 				<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.5s" data-wow-duration="2s">
 					<label for="phone" id="phone">Phone<span class="required">*</span></label>
 					<input type="text" name="phone" id="phone" size="30" value=""/>
 				</div>
+				</div>
 			</div>
+
+				<div class="msg">
 			<div class="wow fadeIn animated" data-wow-delay="0.8s" data-wow-duration="1.5" style="margin-top:15px;">
 				<label for="Message" id="message">Message<span class="required">*</span></label>
 				<textarea name="message" id="message" required></textarea>
 			</div>
+				</div>
+		</div>
+				<div class="send">
 			<div class="wow fadeIn animated" data-wow-delay="1s" data-wow-duration="2s">
-				<input id="submit" type="submit" name="submit" value="Send"/>
+				<div> <input id="submit" type="submit" name="submit" value="Send"> </div>
+				<div> <input id="reset" type="reset" name="reset" value="reset"> </div>
 			</div>
+				</div>
+
+		
 		</fieldset>
 	</form>
 	<div id="success">
