@@ -1,12 +1,44 @@
-
+	
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500'); /*font-family: 'Roboto', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Poppins'); /*font-family: 'Poppins', sans-serif;*/
 
+
+input {
+	width: 300px !important;
+}
+
+.send {
+	width: 30%;
+}
+
+.contfrm {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+	padding: 0;
+	width: 28%;
+}
+
+.msg {
+	width:  30%;
+}
+
+
 input, textarea {
-	background: #536DFE;
+	background: white;
 	font-family: 'Poppins', sans-serif !important;
 	font-size: 20px !important;
-	border-radius: 10px;
+	border-radius: 4px;
+	border: 2px groove blue !important;
 }
 
 input:focus {
@@ -37,25 +69,6 @@ label {
 	padding: 0 !important;
 }
 
-.info-block {
-	width: 160px;
-    height: 150px;
-    margin: 1.6666%;
-    background: #FFA000;
-    color: white;
-    text-align: center;
-    float: left;
-    font-weight: 300;
-    border-radius: 2px;
-    box-shadow: 3px 3px 3px #555;
-	display: table;
-}
-
-.info-block > span {
-	vertical-align: middle;
-	display: table-cell;
-}
-
 #service_list > li {
 	padding: 15px 0px;
 }
@@ -66,26 +79,8 @@ label {
 
 #service_list {
 	padding: 0px 10%;
+	margin: 5% 0px;
 }
-
-#contact_list {
-	column-count: 2;
-	margin-bottom: 5px;
-	margin-top: -5%;
-	list-style-type: none;
-	padding: 0 10%;
-}
-#contact_list > li {
-	padding: 15px 0;
-}
-
-#photo {
-	box-shadow: 5px 5px 5px #444;
-    float: left;
-    margin: 10px 20px 5px 0px;
-	border: 5px solid white;
-}	
-	
 
 /*=========END_EDIT======*/
 body {
@@ -102,8 +97,11 @@ div.img {
     border: 5px solid #ccc;
 }
 
-.cert > a {
-	padding: 0 0 0 10%;
+.center {
+    margin: auto;
+    width: 8%;
+    border: 2px solid #;
+    padding: 5px;
 }
 
 div.img:hover {
@@ -1074,7 +1072,7 @@ html[xmlns] .slides {
 	height:40px;
 	margin-bottom:0px;
 }
-#contact input#submit {
+#contact input#submit, input#reset {
 	width:auto;
 	margin-top:20px;
 	background-color:#333;
