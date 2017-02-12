@@ -2,6 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500'); /*font-family: 'Roboto', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Poppins'); /*font-family: 'Poppins', sans-serif;*/
 
+.send {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.cfrm {
+	display: flex;
+	justify-content: center;
+}
+
+.rows {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px !important;
+}
+
+.msg {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0px !important;
+}
+
+.rows > input {
+	width: 100% !important;	
+}
+
 input, textarea {
 	background: #536DFE;
 	font-family: 'Poppins', sans-serif !important;
@@ -1061,11 +1090,19 @@ html[xmlns] .slides {
 	text-transform:uppercase;
 	font-weight:300;
 }
-#contact input,#contact select,#contact textarea {
+#contact select,#contact textarea {
 	font-family:inherit;
 	font-size:inherit;
 	line-height:inherit;
 	width:100%;
+	border:0px;
+	color:#333;
+}
+#contact input{
+	font-family:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	/*width:100%;*/
 	border:0px;
 	color:#333;
 }
@@ -1074,7 +1111,7 @@ html[xmlns] .slides {
 	height:40px;
 	margin-bottom:0px;
 }
-#contact input#submit {
+#contact input#submit, input#reset {
 	width:auto;
 	margin-top:20px;
 	background-color:#333;
@@ -1084,7 +1121,7 @@ html[xmlns] .slides {
 	font-weight:300;
 }
 #contact textarea {
-	height:200px;
+	height:210px;
 }
 .required {
 	color:#e9266d
