@@ -24,7 +24,7 @@
 .msg {
 	display: flex;
 	flex-direction: column;
-	margin-top: 0px !important;
+	margin-top: 0 !important;
 }
 
 .rows > input {
@@ -54,7 +54,7 @@ label {
 
 #home-slider , .flexslider{
 		height:100vh;
-		padding:0px;
+		padding:0;
 	}
 	
 .navbar-header {
@@ -85,16 +85,16 @@ label {
 	display: table-cell;
 }
 
-#service_list > li {
-	padding: 15px 0px;
+.service_list > li {
+	padding: 15px 0;
 }
 
-#service_list > li > .fa {
+.service_list > li > .fa {
 	font-size: 20px;
 }
 
-#service_list {
-	padding: 0px 10%;
+.service_list {
+	padding: 0 10%;
 }
 
 #contact_list {
@@ -111,14 +111,14 @@ label {
 #photo {
 	box-shadow: 5px 5px 5px #444;
     float: left;
-    margin: 10px 20px 5px 0px;
+    margin: 10px 20px 5px 0;
 	border: 5px solid white;
 }	
 	
 
 /*=========END_EDIT======*/
 body {
-	font-family:Open Sans;
+	/*font-family:Open Sans;*/
 	line-height:1.72857143;
 	font-size:14px;
 }
@@ -236,7 +236,7 @@ li.page-scroll {
 }
 ul.cb-slideshow {
 	list-style:none;
-	margin-bottom:0px;
+	margin-bottom:0;
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family:'BebasNeueRegular';
@@ -249,7 +249,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 /*-----------------TEXT-SELECTION------------------*/
-::selection 	 {color:orange; text-shadow:none;} !important;
+::selection {
+	color:orange; text-shadow:none;
+}
 /*-----------------TEXT-SELECTION------------------*/
 
 #ascrail2000 {
@@ -258,7 +260,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	padding:0 0 0 1px;
 }
 .margtop0 {
-	margin-top:0px;
+	margin-top:0;
 }
 .margtop0 {
 	margin-top:30px;
@@ -268,7 +270,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	height:3px;
 	background-color:#444;
 	max-width:30px;
-	margin:0px auto;
+	margin:0 auto;
 	margin-bottom:20px;
 	margin-top:15px;
 }
