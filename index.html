@@ -478,9 +478,9 @@ inactive box 5 and 6=========================-->
 
 	</div>
 
-	<p class="max65 wow bounceIn animated" data-wow-delay="0.1s">Please contact my office for information regarding fees. A sliding scale is offered for a limited number of clients when requested. Cash, checks and credit cards are accepted.<br/><br/>At this time, the following insurances are accepted in-network:</p>
+	<p class="max65 wow bounceIn animated text-center" data-wow-delay="0.1s">Please contact my office for information regarding fees. A sliding scale is offered for a limited number of clients when requested. Cash, checks and credit cards are accepted.<br/><br/>At this time, the following insurances are accepted in-network:</p>
                         
-						<div class="row wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s" style="margin: 5%;">
+						<div class="row text-center wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s" style="margin: 5%;">
 							
 							<div class="col-md-3 info-block">
 								<span>Anthem</span>
@@ -539,10 +539,10 @@ inactive box 5 and 6=========================-->
                          Dr. Julia is currently accepting new clients and provides evening and weekend office hours.<br/>
                          For additional information or to schedule an appointment you can reach her at:<br/><br/>
 						<ul id="contact_list">
-                         <li><i class="fa fa-phone" aria-hidden="true"></i>  (310) 817-1874</li>
-                         <li><i class="fa fa-fax" aria-hidden="true"></i>  (310) 382-2081</li>
-                         <li><i class="fa fa-envelope-o" aria-hidden="true"></i>  contact@drjuliaspractice.com</li>
-                         <li><i class="fa fa-globe" aria-hidden="true"></i>  http://www.drjuliaspractice.com </li>
+                         <li><i class="fa fa-phone" aria-hidden="true"></i>Tel:<br>(310) 817-1874</li>
+                         <li><i class="fa fa-fax" aria-hidden="true"></i>Fax:<br>(310) 382-2081</li>
+                         <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Email:<br>contact@drjuliaspractice.com</li>
+                         <li><i class="fa fa-globe" aria-hidden="true"></i>Site:<br>drjuliaspractice.com </li>
 						 </ul>
                 </p>
 	</div> 
@@ -551,65 +551,61 @@ inactive box 5 and 6=========================-->
 ================================================== --> 
 </div>
 
+</div>
+	<div class="container-fluid bg_wrap" id="contact_bg">
+
+		<form id="contact" name="contact" method="post">
 
 
-	<form id="contact" name="contact" method="post">
-	
+			<fieldset>
+			<div class="cfrm">
 
-	
-                 <fieldset>
-        <div class="cfrm">
+				<div class="row">
 
-			<div class="row">
-				<div class="rows">
-				<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
-					<label for="name" id="name">Name<span class="required">*</span></label>
-					<input class="effect7" type="text" name="name" id="name" size="30" value="" required/>
-				</div>
-				<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-					<label for="email" id="email">Email<span class="required">*</span></label>
-					<input class="effect7" type="email" name="email" id="email" size="30" placeholder="example@com" required/>
-				</div>
-				<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.5s" data-wow-duration="2s">
-					<label for="phone" id="phone">Phone<span class="required">*</span></label>
-					<input class="effect7" type="text" name="phone" id="phone" size="30" value=""/>
-				</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rows">
+
+						<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+							<label for="name">Name<span class="required">*</span></label>
+							<input class="effect7" type="text" name="name" id="name" size="30" value="" required/>
+						</div>
+
+						<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+							<label for="email" >Email<span class="required">*</span></label>
+							<input class="effect7" type="email" name="email" id="email" size="30" placeholder="mail@example.com" required/>
+						</div>
+
+						<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.5s" data-wow-duration="2s">
+							<label for="phone">Phone<span class="required">*</span></label>
+							<input class="effect7" type="tel" name="phone" id="phone" size="30" value="" required/>
+						</div>
+
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 msg">
+						<div class="wow fadeIn animated" data-wow-delay="0.8s" data-wow-duration="1.5" style="margin-top:15px;">
+							<label for="Message">Message<span class="required">*</span></label>
+							<textarea class="effect7" name="message" id="message" required></textarea>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
-				<div class="msg">
-			<div class="wow fadeIn animated" data-wow-delay="0.8s" data-wow-duration="1.5" style="margin-top:15px;">
-				<label for="Message" id="message">Message<span class="required">*</span></label>
-				<textarea class="effect7" name="message" id="message" required></textarea>
-			</div>
-				</div>
-		</div>
-				<div class="send">
+
 			<div class="wow fadeIn animated" data-wow-delay="1s" data-wow-duration="2s">
-				<div> <input id="submit" type="submit" name="submit" value="Send"> </div>
-				<div> <input id="reset" type="reset" name="reset" value="reset"> </div>
-			</div>
+				<div class="send text-center">
+					<input class="text-center" id="submit" type="submit" name="submit" value="Send" style="background: #8BC34A;">
+					<input id="reset" type="reset" name="reset" value="clear" style="background: #f44336">
 				</div>
+			</div>
 
-		
-		</fieldset>
-	</form>
-	<div id="success">
-		<span>		
-		<p style="margin-top:20px;">
-			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-			 Your message was sent successfully! I will be in touch as soon as I can.
-		</p>
-		</span>
+
+			</fieldset>
+		</form>
+
 	</div>
-	<div id="error">
-		<span>
-		<p>
-			 Something went wrong, try refreshing and submitting the form again.
-		</p>
-		</span>
-	</div>
-</div>   <!-- div container end  
+   <!-- div container end
 ================================================== --> 
 </section>
 
@@ -623,7 +619,7 @@ inactive box 5 and 6=========================-->
 <div class="container">
 	<div class="row">
 	
-		<div class="col-md-6 text-left">
+		<div class="col-md-6 text-left ink">
 			<ul class="social-icons">
 				
 				<li class="wow bounceIn animated" data-wow-delay="0.3s"><a href="#."><i class="fa fa-facebook"></i></a></li>
@@ -637,7 +633,7 @@ inactive box 5 and 6=========================-->
 				 Copyright © 2016 Julia Turetskaya, Psy.D., Licensed Clinical Psychologist. All rights reserved.
 			</p>
 		</div>
-		<div class="col-md-6 text-right">
+		<div class="col-md-6 text-right ink">
 			<div class="cert">
 				<a href="https://www.yelp.com/biz/julia-turetskaya-psyd-beverly-hills-3" title="Dr. Julias Practice on Yelp">	
 					<img  src="img/yelp.png" width="170">    
@@ -654,6 +650,11 @@ inactive box 5 and 6=========================-->
 </div>
 </section>
 
+
+
+
+
+
 <!-- END OF FOOTER
 ================================================== -->
 <!-- Bootstrap core JavaScript
@@ -665,7 +666,7 @@ inactive box 5 and 6=========================-->
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/flexslider.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/validate.js"></script>
+<!--<script src="js/validate.js"></script>-->
 <script src="js/common.js"></script>
 </body>
 </html>
