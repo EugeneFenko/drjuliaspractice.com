@@ -2,8 +2,56 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500'); /*font-family: 'Roboto', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Poppins'); /*font-family: 'Poppins', sans-serif;*/
 
+input, textarea{
+	padding-left: 10px;
+	resize: vertical;
+}
+
+.effect7
+{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+} 
+.effect7:after
+{
+    right:10px; 
+    left:auto; 
+    transform:skew(8deg) rotate(3deg);
+}
+
+input#submit {
+	background-color: #4CAF50 !important;
+	width: 200% !important;
+}
+
+input#submit:hover {
+	background-color: #1B5E20 !important;
+}
+
+input#reset:hover {
+	background-color: #827717 !important;
+}
+
+input#reset {
+	background-color: #CDDC39 !important;
+	width: 200% !important;
+}
+
 .send {
 	padding-top: 20px;
+	margin-right: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -32,18 +80,19 @@
 }
 
 input, textarea {
-	background: #536DFE;
+	background: #ECEFF1;
 	font-family: 'Poppins', sans-serif !important;
 	font-size: 20px !important;
-	border-radius: 10px;
+	border-radius: 4px;
+/*	border: 1px solid black !important;*/
 }
 
 input:focus {
-	background-color: #8C9EFF;
+	background-color: #B0BEC5;
 }
 
 textarea:focus {
-	background-color: #8C9EFF;
+	background-color: #B0BEC5;
 }
 
 label {
