@@ -25,8 +25,12 @@
     <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+
 </head>
 <body data-spy="scroll" data-target=".navbar-fixed-top">
+
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -367,7 +371,7 @@ Today is a gift, that's why it's called a present." - Bil Keane
         <p class="max65 wow bounceIn animated" data-wow-delay="0.1s">
 I use several types of psychotherapies and techniques such as Cognitive Behavioral Therapy (CBT), Mindfulness-Based Cognitive Therapy (MBCT), Cognitive Processing Therapy (CPT), and Motivational Interviewing (MI) to treat the following: </p>
 
-	<ul class="service_list">
+	<ul class="service_list max65 wow bounceIn animated">
 	<li>Mood disorders:  reduction of symptoms of depression, anxiety, bipolar</li>
 	<li>Trauma-related disorders (Specialized training/VA regional certification in treatment of PTSD)</li>
 	<li>Stress management and relaxation training</li>
@@ -381,7 +385,7 @@ I use several types of psychotherapies and techniques such as Cognitive Behavior
 	</ul>
 
       <p>Additional treatment/services provided:</p>
-	<ul class="service_list">
+	<ul class="service_list max65 wow bounceIn animated">
 		<li>Family/caregiver support – Management of stress related to caring for a family member</li>
 		<li>Cognitive training – Learning of compensatory cognitive strategies to assist in coping with decline in memory, attention, visuospatial ability, processing speed, and executive function related to aging and/or illness.</li>
 	</ul> 
@@ -554,7 +558,7 @@ inactive box 5 and 6=========================-->
 </div>
 	<div class="container-fluid bg_wrap" id="contact_bg">
 
-		<form id="contact" name="contact" method="post">
+		<form id="contact" method="post" action="process.php">
 
 
 			<fieldset>
@@ -599,10 +603,13 @@ inactive box 5 and 6=========================-->
 					<input id="reset" type="reset" name="reset" value="clear" style="background: #f44336">
 				</div>
 			</div>
-
-
 			</fieldset>
 		</form>
+
+
+		<div id="ok">
+			<span>Success!</span>
+		</div>
 
 	</div>
    <!-- div container end
@@ -634,7 +641,7 @@ inactive box 5 and 6=========================-->
 			</p>
 		</div>
 		<div class="col-md-6 text-right ink">
-			<div class="cert">
+			<div class="cert ">
 				<a href="https://www.yelp.com/biz/julia-turetskaya-psyd-beverly-hills-3" title="Dr. Julias Practice on Yelp">	
 					<img  src="img/yelp.png" width="170">    
 				</a>
@@ -668,5 +675,31 @@ inactive box 5 and 6=========================-->
 <script src="js/wow.min.js"></script>
 <!--<script src="js/validate.js"></script>-->
 <script src="js/common.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$('#contact').submit(function(e){
+//отменяем стандартное действие при отправке формы
+			e.preventDefault();
+//берем из формы метод передачи данных
+			var m_method=$(this).attr('method');
+//получаем адрес скрипта на сервере, куда нужно отправить форму
+			var m_action=$(this).attr('action');
+//получаем данные, введенные пользователем в формате input1=value1&input2=value2...,
+//то есть в стандартном формате передачи данных формы
+			var m_data=$(this).serialize();
+			$.ajax({
+				type: m_method,
+				url: m_action,
+				data: m_data,
+				success: function(result){
+					$('#contact').css("display","none");
+					$('#ok').css("display","block");
+				}
+			});
+		});
+	});
+</script>
+
 </body>
 </html>

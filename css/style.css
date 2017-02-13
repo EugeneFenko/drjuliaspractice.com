@@ -6,6 +6,19 @@ input, textarea{
 	resize: vertical;
 }
 
+#ok {
+	text-align: center;
+	margin: 5vh 0;
+	display: none;
+}
+
+#ok > span {
+	font-size: 70px;
+	font-weight: bold;
+	background: white;
+	color: #4CAF50;
+	padding: 15px;
+}
 .effect7
 {
     position:relative;
