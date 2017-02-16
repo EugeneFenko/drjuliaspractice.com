@@ -52,6 +52,7 @@ input, textarea{
 .cfrm {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 15px;
 }
 
 .rows {
@@ -394,7 +395,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	padding:35px 25px;
     background-color:#8BC34A;
     color: white;
-	box-shadow: 1px 1px 10px black;
+	box-shadow: 1px 1px 5px black;
 	font-family: 'Roboto';
     font-weight: 300;
     font-size: 16px;
